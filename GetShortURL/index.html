@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ショートURL作成</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- ヘッダ -->
+    <table class="tableHeader">
+        <tr>
+            <td class="tdProcName">
+                <span id="lblProcName" class="lblProcName">ツール</span>
+            </td>
+            <td class="tdNavigate">
+                <span id="lblNavigate" class="lblNavigate">URL短縮ツール</span>
+            </td>
+        </tr>
+    </table>
+
+    <div class="shortenarea">
+        <!-- 入力項目枠 -->
+        <div class="contener">
+            <!-- <h1>URLを入力</h1> -->
+            <div class="input-container">
+                <input id="inputurl" placeholder="短縮するオリジナルURLを入力してください。">
+                <button id="btnshorter" class="btnshorter">短縮！</button>
+                <p class="makehelp">https://manabun.page.link/〇〇〇 のURLを作成します。</p>
+            </div>
+        </div>
+
+        <!-- 結果出力枠 -->
+        <div id="result-area" class="result-contener">
+            <!-- <h2 id="ResultMSG">短縮URLを作成しました！コピーして使用してください。</h2> -->
+            <p id="ResultMSG">短縮URLを作成しました！コピーして使用してください。</p>
+            <p id="shortURL"></p>
+        </div>
+
+    </div>
+    <!-- スクリプト -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="geturl.js"></script>
+</body>
+
+</html>
