@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* =======================================================
+   共通部
+========================================================== */
+@media all and (min-width: 1111px) {
+  .sp {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1110px) {
+  .pc {
+    display: none;
+  }
+}
+
+body {
+  width: 100%;
+  max-width: 1110px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: auto;
+}
+
+@media all and (max-width: 1110px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, p {
+  margin: 0px 8px;
+  margin-bottom: 8px;
+}
+
+/* =======================================================
+   サークル見出
+========================================================== */
+.sec-header h1 {
+  margin-top: 16px;
+}
+
+.sec-header .top_img {
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+@media all and (max-width: 1110px) {
+  .sec-header .top_img {
+    width: 100%;
+  }
+}
+
+/* =======================================================
+   サークル明細
+========================================================== */
+.sec-detail {
+  margin-top: 40px;
+}
+
+.sec-detail .detail_title {
+  font-weight: bold;
+}
+
+.sec-detail .circle_detail {
+  margin-bottom: 32px;
+}
+
+.sec-detail .googlemap {
+  width: 70%;
+  padding-bottom: 40.25%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@media all and (max-width: 1110px) {
+  .sec-detail .googlemap {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.sec-detail .googlemap iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sec-detail .osaru img {
+  width: 70%;
+}
+
+/* =======================================================
+   参加規約・免責事項
+========================================================== */
+.sec-disclaimer {
+  margin-top: 56px;
+  margin-bottom: 8px;
+}
+
+.sec-disclaimer .disclaimer {
+  display: block;
+  width: 98%;
+  margin: auto;
+  height: 150vw;
+  max-height: 1000px;
+  border: solid 0.5px;
+}
